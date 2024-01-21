@@ -1,1 +1,1 @@
-# react-crasj-course
+# react-crash-course
