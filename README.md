@@ -271,3 +271,17 @@ condition && instr1
     )
   }
   ```
+
+  ## Routes
+- Import ```import {BrowserRouter as Router, Route, Routes} from "react-router-dom"```
+- A route looks as follows:
+```jsx
+<Route path='/about' element={<About />} />
+```
+- A Route must be inside a Routes component
+```jsx
+<Routes>
+  <Route ... />
+  <Route ... />
+</Routes>
+```
