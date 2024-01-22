@@ -24,6 +24,20 @@ npx start
 rafce
 ```
 - Use React icons running: ```npm i react-icons``` in terminal.
+- To get the build, close the development server and run:
+```console
+npm run build
+```
+- To serve this build locally, run:
+```console
+sudo npm install -g serve
+serve -s build -p 8000
+```
+Notes:
+    - Use ```sudo``` if using macOS
+    - ```-p 8000``` for using the 8000 port; it should copy the address to clipboard by default
+
+***
 
 ## React Syntax
 - Classic component
@@ -141,11 +155,35 @@ const <component_name> = ({func}) => {
   )
 }
 ```
+Note: Pay attention to ` and '
 
 - Replace an item in a list based on a condition
 ```jsx
 list.map((item) => <boolean_expression> ? {...item, parameter: nweValue} : item)
     )
 ```
+- If-else in JavaScript
+```jsx
+if (condition) {
+  instr1
+} else {
+  instr2
+}
+```
+or
 
+```jsx
+condition ? instr1 : instr2
+```
 
+- If in JavaScript
+```jsx
+if (condition) {
+  instr1
+}
+```
+or
+
+```jsx
+condition && instr1
+```
